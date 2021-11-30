@@ -34,7 +34,7 @@ y = torch.tensor([[2.0], [4.0], [6.0]])
 criterion = torch.nn.MSELoss(size_average=False)
 
 # 分别选择多个优化器
-# optimizer = torch.optim.SGD(model.parameters(), lr=0.001)
+optimizer = torch.optim.SGD(model.parameters(), lr=0.001)
 # optimizer = torch.optim.Adagrad(model.parameters(), lr=0.001)
 # optimizer = torch.optim.Adam(model.parameters(), lr=0.001)
 # optimizer = torch.optim.Adamax(model.parameters(), lr=0.001)
