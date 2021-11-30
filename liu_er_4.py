@@ -27,7 +27,7 @@ for epoch in np.arange(5000):
         l.backward()
         print('\tgrad:', w_1.grad.item(), w_2.grad.item(), b.grad.item())    # 使用.grad.item()输出该变量的值
 
-        w_1.data = w_1.data - ratio*w_1.grad.data
+        w_1.data = w_1.data - ratio*w_1.grad.data       # 这里手动进行权重更新
         w_2.data = w_2.data - ratio*w_2.grad.data
         b.data = b.data - ratio*b.grad.data
 
