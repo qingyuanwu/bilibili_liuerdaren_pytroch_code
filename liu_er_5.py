@@ -28,8 +28,13 @@ class SquareModel_layer (torch.nn.Module):    # 这是一个二次型层，表�
 model = LinearModel()
 print(model)
 
+# 线性数据集，用于线性模型训练与验证
+# x = torch.tensor([[1.0], [2.0], [3.0]])
+# y = torch.tensor([[2.0], [4.0], [6.0]])
+
+# 二次型数据集，用于二次型模型训练与验证
 x = torch.tensor([[1.0], [2.0], [3.0]])
-y = torch.tensor([[2.0], [4.0], [6.0]])
+y = torch.tensor([[1.0], [4.0], [9.0]])
 
 criterion = torch.nn.MSELoss(size_average=False)
 
