@@ -18,7 +18,13 @@ class Binary_classfication(torch.nn.Module):
     def forward(self, x):
         y_pre = torch.sigmoid(self.linear(x))        # 这里原本是F.sigmoid()，但是更新后可以直接使用torch.sigmoid()
         return y_pre
+'''
 
+y_pre = torch.sigmoid(self.linear(x))什么意思？
+
+torch.sigmoid()内容是一个logistic regression，它能将线性层得到的数值结果映射到[0, 1]区间内（表示概率）
+
+'''
 model = Binary_classfication()
 
 critizer = torch.nn.BCELoss(reduction='sum')         # 这里原本是size_average=False，更新后使用reduction='sum'
