@@ -1,3 +1,9 @@
+'''
+
+这里是关于利用pytoch进行线性回归的问题，但是更新部分自己写的关于梯度的方法
+
+'''
+
 import numpy as np
 import torch
 
