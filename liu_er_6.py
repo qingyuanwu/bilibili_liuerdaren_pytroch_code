@@ -21,7 +21,7 @@ class Binary_classfication(torch.nn.Module):
 
 model = Binary_classfication()
 
-critizer = torch.nn.BCELoss(reduction='sum')         # 这里原本是size_average=False，更行后使用reduction='sum'
+critizer = torch.nn.BCELoss(reduction='sum')         # 这里原本是size_average=False，更新后使用reduction='sum'
 '''
 reduction='sum'应该是没有平均，lr=0.001。reduction='mean'，lr=0.01才能达到前者的效果，体会lr和loss之间的关系
 '''
