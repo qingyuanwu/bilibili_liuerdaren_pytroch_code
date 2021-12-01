@@ -17,7 +17,7 @@ class Binary_classfication(torch.nn.Module):
 
     def forward(self, x):
         y_pre = torch.sigmoid(self.linear(x))        # 这里原本是F.sigmoid()，但是更新后可以直接使用torch.sigmoid()
-        return y_pre
+        return y_pre                                 # 激活函数对于线性层的意义：添加非线性性质，因为多个线形层叠加本质上等于一个线性层
 '''
 
 y_pre = torch.sigmoid(self.linear(x))什么意思？
