@@ -1,3 +1,9 @@
+'''
+
+这里是关于利用pytorch进行线性或多项式回归的问题
+
+'''
+
 import numpy as np
 import torch
 import matplotlib.pyplot as plt
