@@ -4,7 +4,9 @@ from torch.utils.data import Dataset, DataLoader
 from torchvision import transforms, datasets
 import torch.nn.functional as F
 import torch.optim as optim
-
+'''
+这是关于线性层进行MNIST集分类的程序
+'''
 batch_size = 64                   # 设置mini-batch
 
 transform = transforms.Compose([
